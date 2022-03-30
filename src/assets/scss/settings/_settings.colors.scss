@@ -1,0 +1,45 @@
+// ===========================================
+// =colors
+// ===========================================
+
+:root {
+  // color variables (never used as is in CSS)
+  --color-red: #d17a67;
+  --color-red-bright: #d17a67;
+  --color-red-dark: #d17a67;
+
+  --color-green: #6dbeb0;
+  --color-green-bright: #39d7bb;
+  --color-green-dark: #599c90;
+
+  --color-pink: #d16479;
+  --color-pink-bright: #e75a75;
+  --color-pink-dark: #ab5263;
+
+  --color-orange: #d19a67;
+  --color-orange-bright: #e79548;
+  --color-orange-dark: #ab7e54;
+
+  --color-gray-100: #0f0907;
+  --color-gray-200: #2c2725;
+  --color-gray-300: #494442;
+  --color-gray-400: #74706f;
+  --color-gray-500: #cac9c8;
+  --color-gray-600: #d9d8d7;
+  --color-gray-700: #e7e6e6;
+  --color-gray-800: #f5f5f5;
+
+  --color-white: #ffffff;
+
+  // incident variables (used in CSS)
+  --color-primary: var(--color-red);
+  --color-primary-bright: var(--color-red-bright);
+  --color-primary-dark: var(--color-re-dark);
+
+  --color-bkg: var(--color-white);
+  --color-bkg-offset: var(--color-gray-700);
+  --color-text: var(--color-gray-100);
+  --color-text-offset: var(--color-gray-400);
+  --color-text-invert: var(--color-white);
+  --color-border: var(--color-gray-500);
+}

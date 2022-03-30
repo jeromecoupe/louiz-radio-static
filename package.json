@@ -1,0 +1,45 @@
+{
+  "name": "louiz-radio-static",
+  "version": "1.0.0",
+  "description": "Static templates for Louiz Radio",
+  "main": "index.js",
+  "scripts": {
+    "clear": "rimraf \"dist\"",
+    "styles:prod": "sass --no-source-map --style=\"compressed\" \"src/assets/scss/main.scss\" \"dist/assets/css/main.css\"",
+    "styles:dev": "sass --embed-source-map --source-map-urls=\"absolute\" \"./src/assets/scss/main.scss\" \"dist/assets/css/main.css\"",
+    "poststyles:prod": "postcss \"dist/assets/css/main.css\" --replace --no-map --use autoprefixer cssnano",
+    "scripts:prod": "esbuild \"./src/assets/js/main.js\" --target=es6 --bundle --minify --outfile=\"./dist/assets/js/main.bundle.js\"",
+    "scripts:dev": "esbuild \"./src/assets/js/main.js\" --target=es6 --bundle --outfile=\"./dist/assets/js/main.bundle.js\"",
+    "server": "browser-sync start --no-open --server \"./dist\" --files \"./dist\"",
+    "eleventy": "npx @11ty/eleventy --quiet",
+    "watch:eleventy": "npx @11ty/eleventy --watch --quiet",
+    "watch:styles": "onchange \"./src/assets/scss/**/*\" -- npm run styles:dev",
+    "watch:scripts": "onchange \"./src/assets/js/**/*\" -- npm run scripts:dev",
+    "dev": "npm-run-all --parallel server watch:*",
+    "build": "npm-run-all clear --parallel styles:prod scripts:prod eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeromecoupe/louiz-radio-static.git"
+  },
+  "keywords": [],
+  "author": "Jérôme Coupé",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/jeromecoupe/louiz-radio-static/issues"
+  },
+  "homepage": "https://github.com/jeromecoupe/louiz-radio-static#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0-canary.4",
+    "autoprefixer": "^10.4.4",
+    "browser-sync": "^2.27.9",
+    "cssnano": "^5.1.5",
+    "esbuild": "^0.14.27",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0",
+    "rimraf": "^3.0.2",
+    "sass": "^1.49.9"
+  }
+}
