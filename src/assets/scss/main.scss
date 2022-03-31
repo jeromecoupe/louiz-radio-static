@@ -1,4 +1,20 @@
-@import "base/base-fonts.scss";
-@import "base/base-margins.scss";
-@import "base/base-html.scss";
-@import "base/base-body.scss";
+// SETTINGS
+@import "settings/_settings-breakpoints.scss";
+
+// MIXINS
+@import "mixins/_mixins-breakpoints.scss";
+
+// BASE
+@import "base/_base-fonts.scss";
+@import "base/_base-margins.scss";
+@import "base/_base-html.scss";
+@import "base/_base-body.scss";
+
+// OBJECTS
+@import "objects/_objects-fluidimage.scss";
+
+// LAYOUT
+@import "layout/_layout-containers.scss";
+@import "layout/_layout-grid.scss";
+
+// COMPONENTS

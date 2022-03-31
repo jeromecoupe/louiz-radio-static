@@ -1,0 +1,15 @@
+// ===========================================
+// =containers
+// ===========================================
+
+.l-container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding-left: calc(18 / 16 * 1rem);
+  padding-right: calc(18 / 16 * 1rem);
+
+  @include breakpoint(medium) {
+    padding-left: calc(48 / 16 * 1rem);
+    padding-right: calc(48 / 16 * 1rem);
+  }
+}
