@@ -1,0 +1,14 @@
+// ===========================================
+// =lead
+// ===========================================
+
+.c-lead {
+  color: var(--color-text);
+  font-weight: 400;
+  font-family: var(--fontstack-alt);
+  font-size: clamp(calc(18 / 16 * 1rem), 3vw, calc(21 / 16 * 1rem));
+}
+
+.c-lead--constrained {
+  max-width: 60ch;
+}

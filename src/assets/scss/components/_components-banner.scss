@@ -10,4 +10,19 @@
 .c-banner__inner {
   padding-top: calc(60 / 16 * 1rem);
   padding-bottom: calc(42 / 16 * 1rem);
+
+  @include breakpoint(medium) {
+    padding-top: calc(84 / 16 * 1rem);
+    padding-bottom: calc(60 / 16 * 1rem);
+  }
+
+  @include breakpoint(large) {
+    padding-top: calc(120 / 16 * 1rem);
+    padding-bottom: calc(66 / 16 * 1rem);
+  }
+
+  @include breakpoint(xlarge) {
+    padding-top: calc(160 / 16 * 1rem);
+    padding-bottom: calc(90 / 16 * 1rem);
+  }
 }

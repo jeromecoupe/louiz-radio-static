@@ -1,0 +1,56 @@
+// ===========================================
+// =titles
+// ===========================================
+
+.c-h1,
+.c-h2,
+.c-h3,
+.c-h4,
+.c-h5,
+.c-h6 {
+  font-family: var(--fontstack-alt);
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+.c-h1 {
+  font-weight: 300;
+  line-height: 1.18;
+  font-size: calc(38 / 16 * 1rem);
+
+  @include breakpoint(small) {
+    font-size: calc(38 / 16 * 1rem);
+  }
+  @include breakpoint(medium) {
+    font-size: calc(50 / 16 * 1rem);
+  }
+  @include breakpoint(large) {
+    line-height: 1.12;
+    font-size: calc(67 / 16 * 1rem);
+  }
+}
+
+.c-h1--invert {
+  color: var(--color-text-invert);
+}
+
+.c-h1--constrained {
+  max-width: 15ch;
+}
+
+.c-h2 {
+  font-weight: 300;
+  line-height: 1.18;
+  font-size: calc(38 / 16 * 1rem);
+
+  @include breakpoint(small) {
+    font-size: calc(38 / 16 * 1rem);
+  }
+  @include breakpoint(medium) {
+    font-size: calc(50 / 16 * 1rem);
+  }
+  @include breakpoint(large) {
+    line-height: 1.12;
+    font-size: calc(67 / 16 * 1rem);
+  }
+}

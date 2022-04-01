@@ -6,7 +6,7 @@
   padding-top: calc(18 / 16 * 1rem);
   padding-bottom: calc(18 / 16 * 1rem);
   background-color: var(--color-brand);
-  border-bottom: 1px solid var(--color-brand-light);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 
   @include breakpoint(medium) {
     padding-top: calc(24 / 16 * 1rem);
@@ -32,6 +32,10 @@
   }
 }
 
+// -------------------------------------------
+// =siteheader logo
+// -------------------------------------------
+
 .c-siteheader__logo {
   margin: 0 auto 0 0;
 
@@ -46,6 +50,12 @@
   text-decoration: none;
   color: var(--color-white);
 
+  width: 56px;
+
+  @include breakpoint(medium) {
+    width: 72px;
+  }
+
   &:hover {
     text-decoration: none;
     color: var(--color-white);
@@ -57,6 +67,10 @@
   width: 100%;
 }
 
+// -------------------------------------------
+// =siteheader nav
+// -------------------------------------------
+
 .c-siteheader__nav {
   display: none;
 
@@ -64,6 +78,10 @@
     display: block;
   }
 }
+
+// -------------------------------------------
+// =siteheader actions
+// -------------------------------------------
 
 .c-siteheader__actions {
   display: none;
@@ -76,6 +94,10 @@
     align-items: center;
   }
 }
+
+// -------------------------------------------
+// =siteheader hamburger
+// -------------------------------------------
 
 .c-siteheader__hamburger {
   margin: 0;

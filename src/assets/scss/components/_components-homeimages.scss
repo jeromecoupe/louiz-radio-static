@@ -6,8 +6,8 @@
   background-image: linear-gradient(
     to bottom,
     var(--color-brand) 0,
-    var(--color-brand) 50%,
-    var(--color-white) 50%,
+    var(--color-brand) 54%,
+    var(--color-white) 54%,
     var(--color-white) 100%
   );
 
@@ -15,19 +15,18 @@
     background-image: linear-gradient(
       to bottom,
       var(--color-brand) 0,
-      var(--color-brand) 60%,
-      var(--color-white) 60%,
+      var(--color-brand) 42%,
+      var(--color-white) 42%,
       var(--color-white) 100%
     );
   }
 }
 
 .c-homeimages__grid {
-  list-style: none;
   margin: 0;
   padding: 0;
 
-  height: 160vw;
+  aspect-ratio: 3 / 4;
 
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -40,35 +39,29 @@
     "c c c c c c c"
     "c c c c c c c"
     "c c c c c c c"
-    ". . d d d d d"
-    ". . d d d d d"
-    ". . d d d d d";
+    ". . . d d d d"
+    ". . . d d d d"
+    ". . . d d d d";
   gap: calc(18 / 16 * 1rem);
 
   @include breakpoint(small) {
-    height: 45vw;
+    aspect-ratio: 16 / 7;
     grid-template-columns: repeat(12, 1fr);
     grid-template-areas:
       ". . . c c c c c c . . ."
       "a a a c c c c c c d d d"
       "a a a c c c c c c d d d"
       ". b b c c c c c c d d d"
-      ". b b c c c c c c d d d"
+      ". b b c c c c c c . . ."
       ". . . c c c c c c . . .";
   }
 
   @include breakpoint(medium) {
-    height: 350px;
     gap: calc(30 / 16 * 1rem);
   }
 
   @include breakpoint(large) {
-    height: 420px;
     gap: calc(42 / 16 * 1rem);
-  }
-
-  @include breakpoint(xlarge) {
-    height: 620px;
   }
 }
 
@@ -76,30 +69,23 @@
   position: relative;
 }
 
-.c-homeimages__one {
+.c-homeimages__grid > img:nth-child(1) {
   grid-area: a;
-  background-color: red;
 }
 
-.c-homeimages__two {
+.c-homeimages__grid > img:nth-child(2) {
   grid-area: b;
-  background-color: green;
 }
 
-.c-homeimages__three {
+.c-homeimages__grid > img:nth-child(3) {
   grid-area: c;
-  background-color: blue;
 }
 
-.c-homeimages__four {
+.c-homeimages__grid > img:nth-child(4) {
   grid-area: d;
-  background-color: yellow;
 }
 
 .c-homeimages__img {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;

@@ -1,22 +1,22 @@
 // ===========================================
-// =main navigation
+// =mobile navigation
 // ===========================================
 
-.c-mainnav {
+.c-mobilenav {
   list-style: none;
   margin: 0;
   padding: 0;
 
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: calc(18 / 16 * 1rem);
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: calc(3 / 16 * 1rem);
 }
 
-.c-mainnav__link {
-  font-size: 1rem;
-  font-weight: 500;
+.c-mobilenav__link {
+  font-size: calc(32 / 16 * 1rem);
+  font-weight: 400;
   font-family: var(--fontstack-alt);
   color: var(--color-text-invert);
   text-decoration: none;
@@ -29,10 +29,6 @@
   }
 
   &.is-active {
-    color: var(--color-text-invert);
-    text-decoration: underline;
-    text-decoration-skip: skip;
-    text-decoration-color: var(--color-text-invert);
-    text-underline-offset: 6px;
+    text-decoration: line-through;
   }
 }

@@ -1,2 +1,2 @@
-import { init as test } from "./modules/test.js";
-test("hellow world");
+import { init as navigation } from "./modules/navigation.js";
+navigation();

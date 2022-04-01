@@ -11,6 +11,7 @@
 @import "base/_base-margins.scss";
 @import "base/_base-html.scss";
 @import "base/_base-body.scss";
+@import "base/_base-animations.scss";
 
 // OBJECTS
 @import "objects/_objects-fluidimage.scss";
@@ -27,3 +28,8 @@
 @import "components/_components-sections.scss";
 @import "components/_components-mainnav.scss";
 @import "components/_components-cta.scss";
+@import "components/_components-closenav.scss";
+@import "components/_components-mobilemenu.scss";
+@import "components/_components-mobilenav.scss";
+@import "components/_components-titles.scss";
+@import "components/_components-lead.scss";

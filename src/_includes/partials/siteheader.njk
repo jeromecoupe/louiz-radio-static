@@ -4,7 +4,7 @@
     <div class="c-siteheader__nav">
       <nav aria-label="header navigation">
         <ul class="c-mainnav">
-          <li class="c-mainnav__item"><a class="c-mainnav__link" href="#">Accueil</a></li>
+          <li class="c-mainnav__item"><a class="c-mainnav__link  is-active" href="#">Accueil</a></li>
           <li class="c-mainnav__item"><a class="c-mainnav__link" href="#">Emissions</a></li>
           <li class="c-mainnav__item"><a class="c-mainnav__link" href="#">A propos</a></li>
           <li class="c-mainnav__item"><a class="c-mainnav__link" href="#">Contact</a></li>
@@ -12,10 +12,12 @@
       </nav>
     </div>
     <p class="c-siteheader__actions">
-      <a class="c-cta  c-cta--icon  c-cta--icon-start" href="#">{% include "svg/icon_play_small.svg" %} Ecouter Live</a>
+      <a class="c-cta  c-cta--icon" href="#">{% include "svg/icon_play_small.svg" %} Ecouter Live</a>
     </p>
     <p class="c-siteheader__hamburger">
-      <a class="c-hamburgermenu" href="#footernav" aria-label="menu">{% include "svg/icon_hamburger.svg" %}</a>
+      <a class="c-hamburgermenu  js-navtrigger" href="#footernav" aria-label="menu">{% include "svg/icon_hamburger.svg" %}</a>
     </p>
   </div>
+
+  {% include "partials/mobilemenu.njk" %}
 </header>

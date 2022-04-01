@@ -15,12 +15,12 @@
 }
 
 .c-cta--icon {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-}
 
-.c-cta--icon-start > svg {
-  margin-right: calc(6 / 16 * 1rem);
+  & > svg {
+    margin-right: calc(6 / 16 * 1rem);
+  }
 }
