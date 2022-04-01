@@ -1,0 +1,26 @@
+// ===========================================
+// =Call to action (CTA)
+// ===========================================
+
+.c-cta {
+  border: 1px solid var(--color-text-invert);
+  border-radius: 2rem;
+  padding: calc(12 / 16 * 1rem) calc(24 / 16 * 1rem);
+  font-size: calc(14 / 16 * 1rem);
+  font-weight: 500;
+  line-height: 1;
+  font-family: var(--fontstack-alt);
+  color: var(--color-text-invert);
+  text-decoration: none;
+}
+
+.c-cta--icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.c-cta--icon-start > svg {
+  margin-right: calc(6 / 16 * 1rem);
+}

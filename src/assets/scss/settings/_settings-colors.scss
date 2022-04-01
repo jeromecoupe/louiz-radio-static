@@ -5,8 +5,9 @@
 :root {
   // color variables (never used as is in CSS)
   --color-red: #d17a67;
-  --color-red-bright: #d17a67;
-  --color-red-dark: #d17a67;
+  --color-red-bright: #e77258;
+  --color-red-dark: #ab6454;
+  --color-red-light: #dfa295;
 
   --color-green: #6dbeb0;
   --color-green-bright: #39d7bb;
@@ -32,9 +33,10 @@
   --color-white: #ffffff;
 
   // incident variables (used in CSS)
-  --color-primary: var(--color-red);
-  --color-primary-bright: var(--color-red-bright);
-  --color-primary-dark: var(--color-re-dark);
+  --color-brand: var(--color-red);
+  --color-brand-bright: var(--color-red-bright);
+  --color-brand-dark: var(--color-red-dark);
+  --color-brand-light: var(--color-red-light);
 
   --color-background: var(--color-white);
   --color-background-offset: var(--color-gray-700);

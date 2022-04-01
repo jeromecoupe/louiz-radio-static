@@ -1,6 +1,6 @@
 <header class="c-siteheader">
   <div class="c-siteheader__inner  l-container">
-    <p class="c-siteheader__logo">{% include "svg/logo.svg" %}</p>
+    <p class="c-siteheader__logo"><a href="/">{% include "svg/logo.svg" %}</a></p>
     <div class="c-siteheader__nav">
       <nav aria-label="header navigation">
         <ul class="c-mainnav">
@@ -12,7 +12,10 @@
       </nav>
     </div>
     <p class="c-siteheader__actions">
-      <a class="c-cta" href="#">Ecouter Live</a>
-    <p>
+      <a class="c-cta  c-cta--icon  c-cta--icon-start" href="#">{% include "svg/icon_play_small.svg" %} Ecouter Live</a>
+    </p>
+    <p class="c-siteheader__hamburger">
+      <a class="c-hamburgermenu" href="#footernav" aria-label="menu">{% include "svg/icon_hamburger.svg" %}</a>
+    </p>
   </div>
 </header>

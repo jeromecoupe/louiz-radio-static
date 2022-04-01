@@ -1,0 +1,13 @@
+// ===========================================
+// =banner
+// ===========================================
+
+.c-banner {
+  background-color: var(--color-brand);
+  color: var(--color-text-invert);
+}
+
+.c-banner__inner {
+  padding-top: calc(60 / 16 * 1rem);
+  padding-bottom: calc(42 / 16 * 1rem);
+}

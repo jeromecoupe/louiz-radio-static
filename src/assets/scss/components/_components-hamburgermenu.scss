@@ -1,7 +1,8 @@
 // ===========================================
-// =html
+// =hamburger menu
 // ===========================================
 
-html {
-  font-size: 100%;
+.c-hamburgermenu,
+.c-hamburgermenu > svg {
+  display: block;
 }

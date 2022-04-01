@@ -1,5 +1,7 @@
 // SETTINGS
 @import "settings/_settings-breakpoints.scss";
+@import "settings/_settings-colors.scss";
+@import "settings/_settings-fonts.scss";
 
 // MIXINS
 @import "mixins/_mixins-breakpoints.scss";
@@ -18,3 +20,10 @@
 @import "layout/_layout-grid.scss";
 
 // COMPONENTS
+@import "components/_components-siteheader.scss";
+@import "components/_components-banner.scss";
+@import "components/_components-homeimages.scss";
+@import "components/_components-hamburgermenu.scss";
+@import "components/_components-sections.scss";
+@import "components/_components-mainnav.scss";
+@import "components/_components-cta.scss";
