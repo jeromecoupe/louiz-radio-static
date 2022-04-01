@@ -3,7 +3,7 @@
 // ===========================================
 
 .c-cta {
-  border: 1px solid var(--color-text-invert);
+  border: 1px solid rgba(255, 255, 255, 0.54);
   border-radius: 2rem;
   padding: calc(12 / 16 * 1rem) calc(24 / 16 * 1rem);
   font-size: calc(14 / 16 * 1rem);
@@ -12,6 +12,13 @@
   font-family: var(--fontstack-alt);
   color: var(--color-text-invert);
   text-decoration: none;
+
+  transition: border-color 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    border-color: var(--color-text-invert);
+  }
 }
 
 .c-cta--icon {
