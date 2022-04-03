@@ -32,3 +32,39 @@
     opacity: 1;
   }
 }
+
+@keyframes bounceFromBottom {
+  0% {
+    transform: translate3d(0, 30px, 0);
+    opacity: 0;
+  }
+
+  16% {
+    transform: translate3d(0, -12px, 0);
+  }
+
+  28% {
+    transform: translate3d(0, 12px, 0);
+  }
+
+  44% {
+    transform: translate3d(0, -6px, 0);
+  }
+
+  59% {
+    transform: translate3d(0, 6px, 0);
+  }
+
+  73% {
+    transform: translate3d(0, -3px, 0);
+  }
+
+  88% {
+    transform: translate3d(0, 3px, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
