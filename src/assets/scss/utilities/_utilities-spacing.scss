@@ -1,0 +1,106 @@
+// ===========================================
+// =spacing
+// ===========================================
+
+// ===========================================
+// =variables
+// ===========================================
+
+$spacing-map: (
+  "none": 0,
+  "xs": 6px,
+  "s": 12px,
+  "m": 18px,
+  "l": 24px,
+  "xl": 42px,
+) !default;
+
+$breakpoints-map: (
+  "small": "all and (min-width: 500px)",
+  "medium": "all and (min-width: 750px)",
+  "large": "all and (min-width: 1024px)",
+  "xlarge": "all and (min-width: 1500px)",
+) !default;
+
+// ===========================================
+// =base classes
+// ===========================================
+
+@each $key, $value in $spacing-map {
+  // margins
+  .u-margin-all-#{$key} {
+    margin: #{$value} !important;
+  }
+  .u-margin-top-#{$key} {
+    margin-top: #{$value} !important;
+  }
+  .u-margin-right-#{$key} {
+    margin-right: #{$value} !important;
+  }
+  .u-margin-bottom-#{$key} {
+    margin-bottom: #{$value} !important;
+  }
+  .u-margin-left-#{$key} {
+    margin-left: #{$value} !important;
+  }
+
+  // paddings
+  .u-padding-all-#{$key} {
+    padding: #{$value} !important;
+  }
+  .u-padding-top-#{$key} {
+    padding-top: #{$value} !important;
+  }
+  .u-padding-right-#{$key} {
+    padding-right: #{$value} !important;
+  }
+  .u-padding-bottom-#{$key} {
+    padding-bottom: #{$value} !important;
+  }
+  .u-padding-left-#{$key} {
+    padding-left: #{$value} !important;
+  }
+}
+
+// ===========================================
+// =responsive classes
+// ===========================================
+@each $name, $query in $breakpoints-map {
+  @media #{$query} {
+    @each $key, $value in $spacing-map {
+      // margins
+      .u-margin-all-#{$key}\@#{$name} {
+        margin: #{$value} !important;
+      }
+      .u-margin-top-#{$key}\@#{$name} {
+        margin-top: #{$value} !important;
+      }
+      .u-margin-right-#{$key}\@#{$name} {
+        margin-right: #{$value} !important;
+      }
+      .u-margin-bottom-#{$key}\@#{$name} {
+        margin-bottom: #{$value} !important;
+      }
+      .u-margin-left-#{$key}\@#{$name} {
+        margin-left: #{$value} !important;
+      }
+
+      // paddings
+      .u-padding-all-#{$key}\@#{$name} {
+        padding: #{$value} !important;
+      }
+      .u-padding-top-#{$key}\@#{$name} {
+        padding-top: #{$value} !important;
+      }
+      .u-padding-right-#{$key}\@#{$name} {
+        padding-right: #{$value} !important;
+      }
+      .u-padding-bottom-#{$key}\@#{$name} {
+        padding-bottom: #{$value} !important;
+      }
+      .u-padding-left-#{$key}\@#{$name} {
+        padding-left: #{$value} !important;
+      }
+    }
+  }
+}
