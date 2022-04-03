@@ -6,8 +6,8 @@
   background-image: linear-gradient(
     to bottom,
     var(--color-brand) 0,
-    var(--color-brand) 54%,
-    var(--color-white) 54%,
+    var(--color-brand) 66%,
+    var(--color-white) 66%,
     var(--color-white) 100%
   );
 
@@ -26,22 +26,17 @@
   margin: 0;
   padding: 0;
 
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 1 / 1;
 
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-areas:
-    "a a a . . . ."
-    "a a a b b . ."
-    "a a a b b . ."
-    "c c c c c c c"
-    "c c c c c c c"
-    "c c c c c c c"
-    "c c c c c c c"
-    "c c c c c c c"
-    ". . . d d d d"
-    ". . . d d d d"
-    ". . . d d d d";
+    "a a a . . ."
+    "a a a b b ."
+    "a a a b b ."
+    ". d d c c c"
+    ". d d c c c"
+    ". . . c c c";
   gap: calc(18 / 16 * 1rem);
 
   @include breakpoint(small) {
@@ -63,10 +58,6 @@
   @include breakpoint(large) {
     gap: calc(42 / 16 * 1rem);
   }
-}
-
-.c-homeimages__grid > li {
-  position: relative;
 }
 
 .c-homeimages__grid > img:nth-child(1) {
