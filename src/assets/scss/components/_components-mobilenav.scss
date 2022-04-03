@@ -18,17 +18,19 @@
   font-size: calc(32 / 16 * 1rem);
   font-weight: 400;
   font-family: var(--fontstack-alt);
-  color: var(--color-text-invert);
+  color: rgba(255, 255, 255, 0.84);
   text-decoration: none;
 
   transition: color 0.2s ease-in-out;
 
   &:hover,
   &:focus {
-    color: rgba(255, 255, 255, 0.84);
+    color: var(--color-text-invert);
+    text-decoration: none;
   }
 
   &.is-active {
+    color: var(--color-text-invert);
     text-decoration: line-through;
   }
 }

@@ -8,8 +8,8 @@
 }
 
 .c-banner__inner {
-  padding-top: calc(60 / 16 * 1rem);
-  padding-bottom: calc(42 / 16 * 1rem);
+  padding-top: calc(48 / 16 * 1rem);
+  padding-bottom: calc(36 / 16 * 1rem);
 
   @include breakpoint(medium) {
     padding-top: calc(84 / 16 * 1rem);
