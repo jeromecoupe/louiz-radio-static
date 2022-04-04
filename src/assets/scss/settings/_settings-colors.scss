@@ -4,22 +4,25 @@
 
 :root {
   // color variables (never used as is in CSS)
-  --color-red: #d17a67;
-  --color-red-bright: #e77258;
-  --color-red-dark: #ab6454;
-  --color-red-light: #f5e3df;
+  --color-red: #ab6353;
+  --color-red-bright: #c37c6b;
+  --color-red-dark: #8c5144;
+  --color-red-light: #f2dfd9;
 
-  --color-green: #6dbeb0;
-  --color-green-bright: #39d7bb;
-  --color-green-dark: #599c90;
+  --color-green: #3a8276;
+  --color-green-bright: #58aca0;
+  --color-green-dark: #306b61;
+  --color-green-light: #d0e8e4;
 
-  --color-pink: #d16479;
-  --color-pink-bright: #e75a75;
-  --color-pink-dark: #ab5263;
+  --color-pink: #c35067;
+  --color-pink-bright: #d66781;
+  --color-pink-dark: #a04254;
+  --color-pink-light: #f4d4dc;
 
-  --color-orange: #d19a67;
-  --color-orange-bright: #e79548;
-  --color-orange-dark: #ab7e54;
+  --color-brown: #9e6c3d;
+  --color-brown-bright: #c9995e;
+  --color-brown-dark: #815932;
+  --color-brown-light: #f0e2d2;
 
   --color-gray-100: #0f0907;
   --color-gray-200: #2c2725;
@@ -36,7 +39,6 @@
   --color-brand: var(--color-red);
   --color-brand-bright: var(--color-red-bright);
   --color-brand-dark: var(--color-red-dark);
-  --color-brand-light: var(--color-red-light);
 
   --color-background: var(--color-white);
   --color-background-offset: var(--color-gray-700);
