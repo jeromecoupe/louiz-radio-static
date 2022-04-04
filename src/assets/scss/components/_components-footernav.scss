@@ -28,4 +28,9 @@
     text-decoration: none;
     color: var(--color-text-invert-offset);
   }
+
+  &.is-active {
+    color: var(--color-text-invert);
+    text-decoration: line-through;
+  }
 }
