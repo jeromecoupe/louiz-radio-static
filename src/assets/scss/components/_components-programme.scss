@@ -43,6 +43,11 @@
     width: 60px;
     height: 60px;
   }
+
+  @include breakpoint(xlarge) {
+    width: 72px;
+    height: 72px;
+  }
 }
 
 .c-programme__title {

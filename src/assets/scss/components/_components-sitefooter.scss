@@ -75,11 +75,11 @@
   grid-template-areas:
     "a"
     "b";
-  gap: calc(6 / 16 * 1rem);
+  gap: calc(12 / 16 * 1rem);
 
   @include breakpoint(large) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-areas: "a b";
+    grid-template-areas: "b a";
     gap: calc(42 / 16 * 1rem);
   }
 }
@@ -93,8 +93,4 @@
   margin: 0;
 
   font-size: calc(14 / 16 * 1rem);
-
-  @include breakpoint(large) {
-    text-align: right;
-  }
 }

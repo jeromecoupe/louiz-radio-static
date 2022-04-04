@@ -9,9 +9,13 @@
 
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+
   align-items: center;
-  gap: calc(12 / 16 * 1rem);
+  gap: calc(18 / 16 * 1rem);
+
+  @include breakpoint(large) {
+    justify-content: flex-end;
+  }
 }
 
 .c-legalnav__link {
