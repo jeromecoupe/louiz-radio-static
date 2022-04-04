@@ -1,17 +1,19 @@
-<footer>
-  <div class="l-container">
-    <div class="c-sitefooter__social">
-      <h2>Restez connectés</h2>
+<footer class="c-sitefooter">
+  <div class="c-sitefooter__top  l-container">
+    
+    <div class="c-sitefooter__contact">
+      <h2 class="c-footertitle">Restez connectés</h2>
       <p>Restez branchés sur Louiz radio et suivez-nous sur les réseaux sociaux.</p>
-      <p><a href="mainto:contact@louizradio.be">contact@louizradio.be</a></p>
+      <p class="u-margin-bottom-l"><a href="mainto:contact@louizradio.be">contact@louizradio.be</a></p>
       <nav aria-label="social media">
-        <ul>
-          <li><a href="#" aria-label="Instagram">{% include "svg/icon_instagram.svg" %}</a></li>
-          <li><a href="#" aria-label="Twitter">{% include "svg/icon_twitter.svg" %}</a></li>
-          <li><a href="#" aria-label="Facebook">{% include "svg/icon_facebook.svg" %}</a></li>
+        <ul class="c-socialmedia">
+          <li class="c-socialmedia__item"><a class="c-socialmedia__link" href="#" aria-label="Instagram">{% include "svg/icon_instagram.svg" %}</a></li>
+          <li class="c-socialmedia__item"><a class="c-socialmedia__link" href="#" aria-label="Twitter">{% include "svg/icon_twitter.svg" %}</a></li>
+          <li class="c-socialmedia__item"><a class="c-socialmedia__link" href="#" aria-label="Facebook">{% include "svg/icon_facebook.svg" %}</a></li>
         </ul>
       </nav>
     </div>
+
     <div class="c-sitefooter__nav">
       <nav aria-label="footer navigation">
         <ul class="c-footernav">
@@ -22,14 +24,24 @@
         </ul>
       </nav>
     </div>
-    <div class="c-sitefooter__legal">
-      <nav aria-label="legal">
-        <ul class="c-legalnav">
-          <li class="c-legalnav__item"><a class="c-legalnav__link" href="#">Mentions légales</a></li>
-          <li class="c-legalnav__item"><a class="c-legalnav__link" href="#">Politique de cookies</a></li>
-        </ul>
-      </nav>
-      <p>&copy; Louiz Radio 2022</p>
+    
+  </div>
+
+  <div class="c-sitefooter__end">
+    <div class="l-container  c-sitefooter__endcontent">
+      
+      <div class="c-sitefooter__legal">
+        <nav aria-label="legal">
+          <ul class="c-legalnav">
+            <li class="c-legalnav__item"><a class="c-legalnav__link" href="#">Mentions légales</a></li>
+            <li class="c-legalnav__item"><a class="c-legalnav__link" href="#">Politique de cookies</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <p class="c-sitefooter__copyright">&copy; Louiz Radio 2022</p>
+
     </div>
   </div>
+
 </footer>

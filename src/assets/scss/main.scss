@@ -12,6 +12,7 @@
 @import "base/_base-html.scss";
 @import "base/_base-body.scss";
 @import "base/_base-animations.scss";
+@import "base/_base-links.scss";
 
 // OBJECTS
 @import "objects/_objects-fluidimage.scss";
@@ -22,6 +23,7 @@
 
 // COMPONENTS
 @import "components/_components-siteheader.scss";
+@import "components/_components-sitefooter.scss";
 @import "components/_components-banner.scss";
 @import "components/_components-homeimages.scss";
 @import "components/_components-hamburgermenu.scss";
@@ -35,6 +37,11 @@
 @import "components/_components-lead.scss";
 @import "components/_components-suptitle.scss";
 @import "components/_components-programme.scss";
+@import "components/_components-socialmedia.scss";
+@import "components/_components-socialmedia.scss";
+@import "components/_components-legalnav.scss";
+@import "components/_components-footernav.scss";
+@import "components/_components-buttons.scss";
 
 // UTILITIES
 @import "utilities/_utilities-spacing.scss";

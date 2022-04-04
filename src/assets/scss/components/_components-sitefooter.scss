@@ -1,0 +1,100 @@
+// ===========================================
+// =site footer
+// ===========================================
+
+.c-sitefooter {
+  background-color: var(--color-brand);
+  color: var(--color-text-invert);
+}
+
+// -------------------------------------------
+// =site footer top
+// -------------------------------------------
+
+.c-sitefooter__top {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    "a"
+    "b";
+  gap: calc(42 / 16 * 1rem);
+
+  padding-top: calc(48 / 16 * 1rem);
+  padding-bottom: calc(48 / 16 * 1rem);
+
+  @include breakpoint(medium) {
+    padding-top: calc(54 / 16 * 1rem);
+    padding-bottom: calc(54 / 16 * 1rem);
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas: "a b";
+    gap: calc(42 / 16 * 1rem);
+  }
+
+  @include breakpoint(large) {
+    padding-top: calc(60 / 16 * 1rem);
+    padding-bottom: calc(60 / 16 * 1rem);
+
+    grid-template-columns: minmax(0, 3fr) minmax(0, 3fr) minmax(0, 6fr);
+    grid-template-areas: "a . b";
+    gap: calc(42 / 16 * 1rem);
+  }
+
+  @include breakpoint(xlarge) {
+    padding-top: calc(90 / 16 * 1rem);
+    padding-bottom: calc(90 / 16 * 1rem);
+  }
+}
+
+.c-sitefooter__contact {
+  grid-area: a;
+}
+
+.c-sitefooter__nav {
+  grid-area: b;
+}
+
+// -------------------------------------------
+// =site footer end
+// -------------------------------------------
+
+.c-sitefooter__end {
+  padding-top: calc(18 / 16 * 1rem);
+  padding-bottom: calc(18 / 16 * 1rem);
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+
+  @include breakpoint(medium) {
+    padding-top: calc(24 / 16 * 1rem);
+    padding-bottom: calc(24 / 16 * 1rem);
+  }
+}
+
+.c-sitefooter__endcontent {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    "a"
+    "b";
+  gap: calc(6 / 16 * 1rem);
+
+  @include breakpoint(large) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas: "a b";
+    gap: calc(42 / 16 * 1rem);
+  }
+}
+
+.c-sitefooter__legal {
+  grid-area: a;
+}
+
+.c-sitefooter__copyright {
+  grid-area: b;
+  margin: 0;
+
+  font-size: calc(14 / 16 * 1rem);
+
+  @include breakpoint(large) {
+    text-align: right;
+  }
+}

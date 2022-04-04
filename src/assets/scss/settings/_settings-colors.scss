@@ -7,7 +7,7 @@
   --color-red: #d17a67;
   --color-red-bright: #e77258;
   --color-red-dark: #ab6454;
-  --color-red-light: #dfa295;
+  --color-red-light: #f5e3df;
 
   --color-green: #6dbeb0;
   --color-green-bright: #39d7bb;
@@ -40,9 +40,13 @@
 
   --color-background: var(--color-white);
   --color-background-offset: var(--color-gray-700);
+
   --color-text: var(--color-gray-100);
   --color-text-offset: var(--color-gray-400);
+
   --color-text-invert: var(--color-white);
+  --color-text-invert-offset: var(--color-red-light);
+
   --color-border: var(--color-gray-500);
   --color-border-light: var(--color-gray-700);
 }

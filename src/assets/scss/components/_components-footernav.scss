@@ -1,8 +1,8 @@
 // ===========================================
-// =mobile navigation
+// =Footer nav
 // ===========================================
 
-.c-mobilenav {
+.c-footernav {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -11,26 +11,21 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  gap: calc(3 / 16 * 1rem);
+  gap: calc(6 / 16 * 1rem);
 }
 
-.c-mobilenav__link {
-  font-size: calc(32 / 16 * 1rem);
-  font-weight: 400;
-  font-family: var(--fontstack-alt);
-  color: var(--color-text-invert);
+.c-footernav__link {
   text-decoration: none;
+  color: var(--color-text-invert);
+  font-size: clamp(calc(38 / 16 * 1rem), 4vw, calc(72 / 16 * 1rem));
+  line-height: 1.06;
+  font-weight: 300;
 
   transition: color 0.2s ease-out;
 
   &:hover,
   &:focus {
-    color: var(--color-text-invert-offset);
     text-decoration: none;
-  }
-
-  &.is-active {
-    color: var(--color-text-invert);
-    text-decoration: line-through;
+    color: var(--color-text-invert-offset);
   }
 }

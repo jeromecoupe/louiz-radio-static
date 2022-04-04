@@ -9,11 +9,6 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 
   @include breakpoint(medium) {
-    padding-top: calc(24 / 16 * 1rem);
-    padding-bottom: calc(24 / 16 * 1rem);
-  }
-
-  @include breakpoint(medium) {
     padding-top: calc(36 / 16 * 1rem);
     padding-bottom: calc(36 / 16 * 1rem);
   }

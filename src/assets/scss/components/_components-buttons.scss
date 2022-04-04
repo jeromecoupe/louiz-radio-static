@@ -1,0 +1,23 @@
+// ===========================================
+// =button
+// ===========================================
+
+.c-button {
+  display: inline-block;
+  cursor: pointer;
+  padding: calc(12 / 16 * 1rem) calc(24 / 16 * 1rem);
+  border: 2px solid var(--color-border-light);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.18;
+  text-decoration: none;
+  color: var(--color-text);
+
+  transition: border-color 0.2s ease-out;
+
+  &:hover,
+  &:focus {
+    border-color: var(--color-border);
+    text-decoration: none;
+  }
+}
