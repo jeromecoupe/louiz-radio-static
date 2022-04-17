@@ -2,7 +2,8 @@
 // =fonts
 // ===========================================
 
+/* prettier-ignore */
 :root {
-  --fontstack-main: system-ui, "Roboto", "Helvetica Neue", sans-serif;
-  --fontstack-alt: "Libre Franklin", "Helvetica Neue", system-ui, sans-serif;
+  --fontstack-main: "Helvetica Neue", "Helvetica", system-ui, sans-serif;
+  --fontstack-alt: "Libre Franklin", "Helvetica Neue", "Helvetica", system-ui, sans-serif;
 }
