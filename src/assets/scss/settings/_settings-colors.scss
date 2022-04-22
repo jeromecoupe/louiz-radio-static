@@ -49,5 +49,10 @@
   --color-text-inverse: var(--color-white);
 
   --color-border: var(--color-gray-500);
-  --color-border-light: var(--color-gray-700);
+  --color-border-soft: var(--color-gray-700);
+  --color-border-hard: var(--color-gray-300);
+
+  --color-pagination: var(--color-gray-200);
+  --color-pagination-hover: var(--color-gray-100);
+  --color-pagination-disabled: var(--color-gray-500);
 }

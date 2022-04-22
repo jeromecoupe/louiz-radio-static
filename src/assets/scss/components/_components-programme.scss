@@ -37,6 +37,10 @@
   a:hover &,
   a:focus & {
     animation: bounceFromBottom 0.42s ease-out forwards 1;
+
+    @media screen and (prefers-reduced-motion: reduce) {
+      animation: none;
+    }
   }
 
   @include breakpoint(large) {

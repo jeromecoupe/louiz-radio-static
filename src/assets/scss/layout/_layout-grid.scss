@@ -26,7 +26,6 @@ $grid-gutter: calc(42 / 16 * 1rem);
 
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  gap: $grid-gutter;
 }
 
 .l-grid--2cols {
@@ -39,6 +38,18 @@ $grid-gutter: calc(42 / 16 * 1rem);
 
 .l-grid--4cols {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.l-grid--gap {
+  gap: $grid-gutter;
+}
+
+.l-grid--rowgap {
+  row-gap: $grid-gutter;
+}
+
+.l-grid--colgap {
+  column-gap: $grid-gutter;
 }
 
 // ===========================================

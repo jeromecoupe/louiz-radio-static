@@ -2,14 +2,7 @@
   <div class="c-siteheader__inner  l-container">
     <p class="c-siteheader__logo"><a href="/">{% include "svg/logo.svg" %}</a></p>
     <div class="c-siteheader__nav">
-      <nav aria-label="header navigation">
-        <ul class="c-mainnav">
-          <li class="c-mainnav__item"><a class="c-mainnav__link  is-active" href="#">Accueil</a></li>
-          <li class="c-mainnav__item"><a class="c-mainnav__link" href="#">Emissions</a></li>
-          <li class="c-mainnav__item"><a class="c-mainnav__link" href="#">A propos</a></li>
-          <li class="c-mainnav__item"><a class="c-mainnav__link" href="#">Contact</a></li>
-        </ul>
-      </nav>
+      {% include "partials/mainnav.njk" %}
     </div>
     <p class="c-siteheader__actions">
       <a class="c-cta  c-cta--icon" href="#">{% include "svg/icon_play_small.svg" %} Ecouter Live</a>

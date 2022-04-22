@@ -4,6 +4,8 @@ permalink: index.html
 
 {% extends "layouts/base.njk" %}
 
+{% set currentSection = "home" %}
+
 {% block content %}
 <main>
   <div class="c-banner">
@@ -39,7 +41,7 @@ permalink: index.html
     <div class="l-container">
 
       <h2 class="c-sectiontitle">Emissions</h2>
-      <ul class="l-grid  l-grid--2cols@small  l-grid--3cols@large  u-margin-bottom-xl">
+      <ul class="l-grid  l-grid--gap  l-grid--2cols@small  l-grid--3cols@large  u-margin-bottom-xl">
         <li>
 
           <article class="c-programme">

@@ -1,0 +1,15 @@
+<nav aria-label="header navigation">
+  <ul class="c-mainnav">
+    {% for item in nav %}
+
+      {% set currentClass = "" %}
+      {% set currentAria = "" %}
+      {% if item.trigger == currentSection %}
+        {% set currentClass = "is-active" %}
+        {% set currentAria = 'aria-current="page"'|safe %}
+      {% endif %}
+
+      <li class="c-mainnav__item"><a class="c-mainnav__link  {{ currentClass }}" href="{{ item.url }}" {{ currentAria }}>{{ item.label }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

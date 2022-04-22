@@ -4,10 +4,10 @@
 
 @keyframes marquee {
   from {
-    background-position: 0 50%;
+    background-position: 50% 50%;
   }
   to {
-    background-position: 1000px 50%;
+    background-position: calc(50% + 1000px) 50%;
   }
 }
 
@@ -16,14 +16,18 @@
   background-image: url(../img/soundwave_one.svg), url(../img/soundwave_two.svg),
     url(../img/soundwave_three.svg);
   background-repeat: repeat-x;
-  background-position: 0 50%;
+  background-position: 50% 50%;
 
-  animation: marquee 1s steps(8) infinite;
+  animation: marquee 1s steps(6) infinite;
+
+  @media screen and (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
 }
 
 .c-banner__inner {
-  padding-top: calc(60 / 16 * 1rem);
-  padding-bottom: calc(42 / 16 * 1rem);
+  padding-top: calc(90 / 16 * 1rem);
+  padding-bottom: calc(60 / 16 * 1rem);
 
   @include breakpoint(medium) {
     padding-top: calc(84 / 16 * 1rem);

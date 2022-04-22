@@ -1,0 +1,19 @@
+// ===========================================
+// =categories
+// ===========================================
+
+.c-categories {
+  margin-bottom: calc(24 / 16 * 1rem);
+}
+
+.c-categories__title {
+  font-weight: 600;
+  font-size: calc(16 / 16 * 1rem);
+  font-family: var(--fontstack-alt);
+}
+
+.c-catlist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,44 @@
+// ===========================================
+// =searchform
+// ===========================================
+
+.c-searchform {
+  margin-bottom: calc(24 / 16 * 1rem);
+}
+
+.c-searchform__field {
+  display: grid;
+  grid-template-columns: 1fr calc(54 / 16 * 1rem);
+}
+
+.c-searchform__input {
+  grid-row: 1 / 2;
+  grid-column: 1 / span 2;
+
+  padding: calc(18 / 16 * 1rem) calc(54 / 16 * 1rem) calc(18 / 16 * 1rem)
+    calc(18 / 16 * 1rem);
+  font-size: 1rem;
+  line-height: 1;
+  border: 2px solid var(--color-border);
+  border-radius: 0;
+}
+
+.c-searchform__input:focus {
+  outline: none;
+  border-color: var(--color-text);
+}
+
+.c-searchform__submit {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  color: var(--color-border);
+
+  input:focus + & {
+    color: var(--color-text);
+  }
+}
