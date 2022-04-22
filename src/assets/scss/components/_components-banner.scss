@@ -2,27 +2,41 @@
 // =banner
 // ===========================================
 
+@keyframes marquee {
+  from {
+    background-position: 0 50%;
+  }
+  to {
+    background-position: 1000px 50%;
+  }
+}
+
 .c-banner {
   background-color: var(--color-brand);
-  color: var(--color-text-invert);
+  background-image: url(../img/soundwave_one.svg), url(../img/soundwave_two.svg),
+    url(../img/soundwave_three.svg);
+  background-repeat: repeat-x;
+  background-position: 0 50%;
+
+  animation: marquee 1s steps(8) infinite;
 }
 
 .c-banner__inner {
-  padding-top: calc(48 / 16 * 1rem);
-  padding-bottom: calc(36 / 16 * 1rem);
+  padding-top: calc(60 / 16 * 1rem);
+  padding-bottom: calc(42 / 16 * 1rem);
 
   @include breakpoint(medium) {
     padding-top: calc(84 / 16 * 1rem);
-    padding-bottom: calc(60 / 16 * 1rem);
+    padding-bottom: calc(72 / 16 * 1rem);
   }
 
   @include breakpoint(large) {
     padding-top: calc(120 / 16 * 1rem);
-    padding-bottom: calc(66 / 16 * 1rem);
+    padding-bottom: calc(96 / 16 * 1rem);
   }
 
   @include breakpoint(xlarge) {
     padding-top: calc(160 / 16 * 1rem);
-    padding-bottom: calc(90 / 16 * 1rem);
+    padding-bottom: calc(130 / 16 * 1rem);
   }
 }

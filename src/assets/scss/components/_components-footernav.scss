@@ -16,7 +16,7 @@
 
 .c-footernav__link {
   text-decoration: none;
-  color: var(--color-text-invert);
+  color: var(--color-text-inverse);
   font-size: clamp(calc(38 / 16 * 1rem), 4vw, calc(72 / 16 * 1rem));
   line-height: 1.06;
   font-weight: 300;
@@ -30,7 +30,7 @@
   }
 
   &.is-active {
-    color: var(--color-text-invert);
+    color: var(--color-text-inverse);
     text-decoration: line-through;
   }
 }

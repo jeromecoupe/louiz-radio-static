@@ -10,14 +10,14 @@
   font-weight: 500;
   line-height: 1;
   font-family: var(--fontstack-alt);
-  color: var(--color-text-invert);
+  color: var(--color-text-inverse);
   text-decoration: none;
 
   transition: border-color 0.2s ease-out;
 
   &:hover,
   &:focus {
-    border-color: var(--color-text-invert);
+    border-color: var(--color-text-inverse);
     text-decoration: none;
   }
 }

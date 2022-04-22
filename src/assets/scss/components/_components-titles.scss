@@ -32,7 +32,7 @@
 }
 
 .c-h1--inverse {
-  color: var(--color-text-invert);
+  color: var(--color-text-inverse);
 }
 
 .c-h1--constrained {
@@ -100,7 +100,7 @@
 .c-footertitle {
   font-family: var(--fontstack-alt);
   margin-bottom: 1em;
-  color: var(--color-text-invert);
+  color: var(--color-text-inverse);
   font-weight: 700;
   font-size: calc(18 / 16 * 1rem);
 }

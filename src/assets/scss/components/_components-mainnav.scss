@@ -17,7 +17,7 @@
 .c-mainnav__link {
   font-size: 1rem;
   font-weight: 500;
-  color: var(--color-text-invert);
+  color: var(--color-text-inverse);
   font-family: var(--fontstack-alt);
   text-decoration: none;
 
@@ -30,10 +30,10 @@
   }
 
   &.is-active {
-    color: var(--color-text-invert);
+    color: var(--color-text-inverse);
     text-decoration: underline;
     text-decoration-skip: skip;
-    text-decoration-color: var(--color-text-invert);
+    text-decoration-color: var(--color-text-inverse);
     text-underline-offset: 6px;
   }
 }

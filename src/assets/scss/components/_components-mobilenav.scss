@@ -18,7 +18,7 @@
   font-size: calc(32 / 16 * 1rem);
   font-weight: 400;
   font-family: var(--fontstack-alt);
-  color: var(--color-text-invert);
+  color: var(--color-text-inverse);
   text-decoration: none;
 
   transition: color 0.2s ease-out;
@@ -30,7 +30,7 @@
   }
 
   &.is-active {
-    color: var(--color-text-invert);
+    color: var(--color-text-inverse);
     text-decoration: line-through;
   }
 }
