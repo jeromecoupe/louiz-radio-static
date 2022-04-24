@@ -5,8 +5,8 @@
 .c-pagination {
   list-style: none;
   margin: calc(30 / 16 * 1rem) 0 0;
-  border-top: 1px solid var(--color-border-soft);
-  padding: calc(30 / 16 * 1rem) 0 0;
+  padding: 0;
+
   display: flex;
   flex-direction: row;
   justify-content: flex-start;

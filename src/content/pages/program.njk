@@ -1,0 +1,59 @@
+---
+permalink: emissions/titre-emission/index.html
+---
+
+{% extends "layouts/base.njk" %}
+
+{% set currentSection = "programs" %}
+
+{% block content %}
+<main>
+
+  <div class="c-banner">
+    <div class="c-banner__content">
+      <div class="l-container">
+          <h1 class="c-h1  c-h1--constrained  c-h1--inverse  u-margin-bottom-none">Long live Rock'n Roll</h1>
+      
+      </div>
+    </div>
+    <div class="c-banner__image">
+      <img class="o-fluidimg"
+        src="https://picsum.photos/id/1071/1500/600"
+        decoding="async"
+        width="1500"
+        height="600"
+        alt="programme">
+    </div>
+  </div>
+
+  <div class="c-section">
+    <div class="l-container">
+
+      <p class="c-lead  c-lead--constrained">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quia modi totam doloremque voluptatum exercitationem aliquid nemo quo error voluptas odit consequatur nisi ipsa, beatae atque molestiae expedita, id architecto.</p>
+
+    </div>
+  </div>
+
+  <div class="c-section">
+    <div class="l-container">
+
+      <h2 class="c-sectiontitle">18 Episodes</h2>
+
+      <ul class="c-list-episodes">
+        <li class="c-list-episodes__item">
+
+          <article class="c-episode">
+            <a href="#" class="c-episode__link">
+              <p class="c-episode__date"><time datetime="2022-01-25">January 25th, 2022</time></p>
+              <h3 class="c-episode__title">Titre d'un épisode de Long live Rock'n Roll</h3>
+            </a>
+          </article>
+
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+</main>
+{% endblock %}

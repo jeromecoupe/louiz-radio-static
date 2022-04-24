@@ -1,0 +1,40 @@
+// ===========================================
+// =episode
+// ===========================================
+
+.c-episode {
+  display: block;
+}
+
+.c-episode__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  padding-top: calc(24 / 16 * 1rem);
+  padding-bottom: calc(24 / 16 * 1rem);
+
+  @include breakpoint(large) {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: calc(42 / 16 * 1rem);
+  }
+}
+
+.c-episode__date {
+  margin: 0;
+
+  @include breakpoint(large) {
+    flex: 0 0 300px;
+  }
+}
+
+.c-episode__title {
+  margin: 0;
+
+  @include breakpoint(large) {
+    flex: 1 1 100%;
+  }
+}
