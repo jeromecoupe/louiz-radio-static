@@ -28,8 +28,8 @@
   --color-gray-200: #2c2725;
   --color-gray-300: #494442;
   --color-gray-400: #74706f;
-  --color-gray-500: #cac9c8;
-  --color-gray-600: #d9d8d7;
+  --color-gray-500: #9d9b9a;
+  --color-gray-600: #cecdcd;
   --color-gray-700: #e7e6e6;
   --color-gray-800: #f5f5f5;
 
@@ -45,14 +45,19 @@
   --color-background-offset: var(--color-gray-700);
 
   --color-text: var(--color-gray-100);
-  --color-text-offset: var(--color-gray-400);
+  --color-text-offset: var(--color-gray-500);
   --color-text-inverse: var(--color-white);
+
+  --color-link-underline: var(--color-gray-200);
 
   --color-border: var(--color-gray-500);
   --color-border-soft: var(--color-gray-700);
   --color-border-hard: var(--color-gray-300);
 
+  --color-icon: var(--color-gray-600);
+  --color-icon-hover: var(--color-gray-300);
+
   --color-pagination: var(--color-gray-200);
   --color-pagination-hover: var(--color-gray-100);
-  --color-pagination-disabled: var(--color-gray-500);
+  --color-pagination-disabled: var(--color-gray-600);
 }

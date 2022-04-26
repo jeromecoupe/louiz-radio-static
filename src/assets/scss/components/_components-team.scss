@@ -1,0 +1,25 @@
+// ===========================================
+// =team
+// ===========================================
+
+.c-team {
+  display: block;
+}
+
+.c-team__img {
+  margin-bottom: calc(24 / 16 * 1rem);
+}
+
+.c-team__name {
+  margin-bottom: calc(6 / 16 * 1rem);
+  font-weight: 600;
+  font-size: calc(21 / 16 * 1rem);
+  line-height: 1.18;
+  font-family: var(--fontstack-alt);
+  color: var(--color-text);
+}
+
+.c-team__function {
+  margin-bottom: 0;
+  color: var(--color-text-offset);
+}
