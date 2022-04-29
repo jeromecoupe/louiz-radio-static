@@ -19,6 +19,8 @@
   font-weight: 400;
   font-family: var(--fontstack-alt);
   color: var(--color-text-inverse);
+  text-decoration-color: var(--color-text-inverse);
+  text-decoration-thickness: auto;
   text-decoration: none;
 
   transition: color 0.2s ease-out;

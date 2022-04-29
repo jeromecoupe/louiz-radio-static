@@ -103,14 +103,10 @@ https://www.modularscale.com/?16,42&px&1.333
 
 .c-sectiontitle {
   font-family: var(--fontstack-alt);
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
   color: var(--color-text);
   font-weight: 800;
-  font-size: calc(21 / 16 * 1rem);
-
-  @include breakpoint(large) {
-    font-size: calc(24 / 16 * 1rem);
-  }
+  font-size: clamp(calc(18 / 16 * 1rem), 2vw, calc(24 / 16 * 1rem));
 }
 
 // ===========================================

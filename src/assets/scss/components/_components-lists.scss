@@ -1,0 +1,35 @@
+// ===========================================
+// =bare lists
+// ===========================================
+
+.c-list-bare {
+  list-style: none;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+// ===========================================
+// =vertical lists
+// ===========================================
+
+.c-list-spaced {
+  list-style: none;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.c-list-spaced--xs {
+  & > li:not(:last-child) {
+    margin-bottom: calc(3 / 16 * 1rem);
+  }
+}
+
+.c-list-spaced--s {
+  & > li:not(:last-child) {
+    margin-bottom: calc(6 / 16 * 1rem);
+  }
+}

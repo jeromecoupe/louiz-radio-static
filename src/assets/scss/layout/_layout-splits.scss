@@ -22,9 +22,16 @@ $breakpoints-map: (
   grid-template-columns: minmax(0, 1fr);
 }
 
-.l-split--1by2 {
+.l-split--1fr2fr {
   @include breakpoint(medium) {
     grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
-    gap: var(--grid-gutter);
+    column-gap: var(--grid-gutter);
+  }
+}
+
+.l-split--5fr7fr {
+  @include breakpoint(large) {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    column-gap: var(--grid-gutter);
   }
 }

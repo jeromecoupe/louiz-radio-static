@@ -19,14 +19,21 @@
 }
 
 .c-list-categories__link {
-  display: inline-block;
+  display: block;
+  padding-top: calc(3 / 16 * 1rem);
+  padding-bottom: calc(3 / 16 * 1rem);
   color: var(--color-text-offset);
   text-decoration: none;
 
+  transition: color 0.2s ease-out;
+
   &:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--color-link-underline);
-    text-underline-offset: 0.18em;
+    text-decoration: none;
+    color: var(--color-text);
+  }
+
+  @include breakpoint(medium) {
+    display: inline-block;
   }
 }
 
