@@ -70,6 +70,7 @@
 .c-banner__image {
   box-sizing: border-box;
   height: 240px;
+  background-color: var(--color-text-offset);
 
   @include breakpoint(medium) {
     height: 300px;

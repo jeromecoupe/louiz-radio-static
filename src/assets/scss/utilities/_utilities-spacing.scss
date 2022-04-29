@@ -65,6 +65,7 @@ $breakpoints-map: (
 // ===========================================
 // =responsive classes
 // ===========================================
+
 @each $name, $query in $breakpoints-map {
   @media #{$query} {
     @each $key, $value in $spacing-map {

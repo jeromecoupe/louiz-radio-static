@@ -48,11 +48,11 @@
   --color-text-offset: var(--color-gray-500);
   --color-text-inverse: var(--color-white);
 
-  --color-link-underline: var(--color-gray-200);
+  --color-link-underline: var(--color-gray-600);
 
   --color-border: var(--color-gray-500);
-  --color-border-soft: var(--color-gray-700);
-  --color-border-hard: var(--color-gray-300);
+  --color-border-light: var(--color-gray-700);
+  --color-border-dark: var(--color-gray-300);
 
   --color-icon: var(--color-gray-500);
   --color-icon-hover: var(--color-gray-100);
@@ -60,4 +60,11 @@
   --color-pagination: var(--color-gray-200);
   --color-pagination-hover: var(--color-gray-100);
   --color-pagination-disabled: var(--color-gray-600);
+}
+
+[data-theme="green"] {
+  --color-brand: var(--color-green);
+  --color-brand-bright: var(--color-green-bright);
+  --color-brand-dark: var(--color-green-dark);
+  --color-brand-light: var(--color-green-light);
 }
