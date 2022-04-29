@@ -1,0 +1,29 @@
+// ===========================================
+// =subscribe
+// ===========================================
+
+.c-subscribe {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: calc(3 / 16 * 1rem);
+}
+
+.c-subscribe__link {
+  display: block;
+  color: var(--color-icon);
+  transition: color 0.2s ease-out;
+
+  &:hover {
+    color: var(--color-icon-hover);
+  }
+}
+
+.c-subscribe__link > svg {
+  display: block;
+}

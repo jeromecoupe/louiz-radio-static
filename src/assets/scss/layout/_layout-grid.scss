@@ -13,8 +13,6 @@ $breakpoints-map: (
   "xlarge": "all and (min-width: 1500px)",
 ) !default;
 
-$grid-gutter: calc(42 / 16 * 1rem);
-
 // ===========================================
 // =base classes
 // ===========================================
@@ -41,15 +39,15 @@ $grid-gutter: calc(42 / 16 * 1rem);
 }
 
 .l-grid--gap {
-  gap: $grid-gutter;
+  gap: var(--grid-gutter);
 }
 
 .l-grid--rowgap {
-  row-gap: $grid-gutter;
+  row-gap: var(--grid-gutter);
 }
 
 .l-grid--colgap {
-  column-gap: $grid-gutter;
+  column-gap: var(--grid-gutter);
 }
 
 // ===========================================

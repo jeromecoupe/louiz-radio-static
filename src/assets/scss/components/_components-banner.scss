@@ -75,6 +75,14 @@
     height: 300px;
   }
 
+  @include breakpoint(large) {
+    height: 360px;
+  }
+
+  @include breakpoint(xlarge) {
+    height: 420px;
+  }
+
   background-color: white;
   background-image: linear-gradient(
     to bottom,

@@ -2,6 +2,10 @@
 // =titles
 // ===========================================
 
+/*
+https://www.modularscale.com/?16,42&px&1.333
+*/
+
 .c-h1,
 .c-h2,
 .c-h3,
@@ -19,12 +23,10 @@
   line-height: 1.18;
   font-size: calc(38 / 16 * 1rem);
 
-  @include breakpoint(small) {
-    font-size: calc(38 / 16 * 1rem);
-  }
   @include breakpoint(medium) {
     font-size: calc(50 / 16 * 1rem);
   }
+
   @include breakpoint(large) {
     line-height: 1.12;
     font-size: calc(67 / 16 * 1rem);
@@ -74,6 +76,24 @@
 
   @include breakpoint(large) {
     font-size: calc(28 / 16 * 1rem);
+  }
+}
+
+.c-h5 {
+  font-weight: 700;
+  font-size: calc(18 / 16 * 1rem);
+
+  @include breakpoint(medium) {
+    font-size: calc(21 / 16 * 1rem);
+  }
+}
+
+.c-h6 {
+  font-weight: 700;
+  font-size: calc(16 / 16 * 1rem);
+
+  @include breakpoint(medium) {
+    font-size: calc(18 / 16 * 1rem);
   }
 }
 

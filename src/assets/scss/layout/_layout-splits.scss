@@ -1,0 +1,30 @@
+// ===========================================
+// =splits
+// ===========================================
+
+// ===========================================
+// =variables
+// ===========================================
+
+$breakpoints-map: (
+  "small": "all and (min-width: 500px)",
+  "medium": "all and (min-width: 750px)",
+  "large": "all and (min-width: 1024px)",
+  "xlarge": "all and (min-width: 1500px)",
+) !default;
+
+// ===========================================
+// =base classes
+// ===========================================
+
+.l-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.l-split--1by2 {
+  @include breakpoint(medium) {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    gap: var(--grid-gutter);
+  }
+}

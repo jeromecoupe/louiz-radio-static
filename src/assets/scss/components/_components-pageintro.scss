@@ -1,0 +1,23 @@
+.c-pageintro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "a" "b";
+
+  @include breakpoint(medium) {
+    grid-template-columns: minmax(0, 8fr) minmax(0, 4fr);
+    grid-template-areas: "a b";
+  }
+
+  @include breakpoint(large) {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 1fr) minmax(0, 4fr);
+    grid-template-areas: "a . b";
+  }
+}
+
+.c-pageintro__primary {
+  grid-area: a;
+}
+
+.c-pageintro__secondary {
+  grid-area: b;
+}

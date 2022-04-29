@@ -36,7 +36,7 @@
   }
 
   @include breakpoint(large) {
-    gap: calc(42 / 16 * 1rem);
+    gap: var(--grid-gutter);
   }
 }
 
